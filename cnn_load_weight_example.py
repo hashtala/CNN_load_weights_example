@@ -44,7 +44,6 @@ gela = cnn(CNN = [((5, 1, 5, 5), T.nnet.relu, (2,2)),
 
 
 gela.load_from_files()
-gela.weights_optimized = True
 pred = gela.predict(X = X_reshaped, Y=  Y_train)
 
 
